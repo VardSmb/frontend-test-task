@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Crazy China</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/media-queries.css" rel="stylesheet" />
+	<link href="css/animate.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/wow.min.js"></script>
+		  <script>
+			new WOW().init();
+		  </script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="menu-wrapper">
+			<div class="menu-wrapper-overlay">
+				<div class="menu-wrapper-content">
+					<div class="logo-box left">
+						<a href="#" class="logo">
+							<img src="images/logo.png" alt="">
+						</a>
+					</div>
+					<div id="menu-wrapper-btn" class="menu-btn-class right">
+						<div class="menu-btn menu-btn_active">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<ul id="menu-list" class="menu-list clear">
+						<li><a class="menu-list-item" href="#services">Комплекс услуг</a></li>
+						<li><a class="menu-list-item" href="#about">О компании</a></li>
+						<li><a class="menu-list-item" href="#calculator">Калькулятор</a></li>
+						<li><a class="menu-list-item" href="#contacts">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--HEADER AREA START-->
+		<header class="header">
+			<div class="header-container">
+                <div class="menu-container">
+                    <nav  class="nav-block container-fluid">
+						<div class="row">
+							<div class="menu row d-flex justify-content-between">
+								<div class="row d-flex justify-content-between">
+								<a href="#" class="logo">
+									<img src="images/logo.png" alt="">
+								</a>
+								<div id="header-menu-btn" class="menu-btn-class">
+									<div class="menu-btn">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<div class="menu-item-word">Меню</div>
+								</div>
+								</div>
+								<ul id="nav-list" class="nav-list">
+									<li><a class="nav-list-item" href="#services">Комплекс услуг</a></li>
+									<li><a class="nav-list-item" href="#about">О компании</a></li>
+									<li><a class="nav-list-item" href="#contacts">Контакты</a></li>
+								</ul>
+								<div class="header-contacts">
+									<a href="tel:+79531693009" class="phone">
+										<div class="phone-img">
+											<img src="images/phone.png" alt="">
+										</div>
+										<span>+7 (953) 169 30 09</span>
+									</a>
+									<a href="mailto:info@crazychina.ru" class="mail">
+										<div class="mail-img">
+											<img src="images/email.png" alt="">
+										</div>
+										<span>info@crazychina.ru</span>
+									</a>
+									<a href="#" class="header-free-btn open-popup" iddiv="popup-free-form">Бесплатная консультация</a>
+								</div>
+							</div>
+						</div>
+                    </nav>
+                </div>
+				<div class="header-content container">
+					<h1 class="animated delay-03s fadeInUp">Полный комплекс услуг по работе с Китаем</h1>
+					<h2 class="animated delay-06s fadeInUp">от поиска товара/производителя до логистики и таможенного оформления</h2>
+					<a iddiv="popup-form" class="header-btn open-popup animated delay-08s fadeInUp">Заказать услугу</a>
+					<a href="#calculator" class="header-btn animated delay-1s fadeInUp">Рассчитать доставку</a>
+				</div>
+				<div class="header-arrow fadeInDown animated infinite">
+					<img src="images/arrow.png" alt="">
+				</div>
+            </div>
+             <div id="popup-free-form" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<div class="popup-container">
+						<h6 class="popup-text">Заполните форму и получите консультацию от нашего специалиста бесплатно</h6>
+						<form id="form" class="form popup-form" name="form" method="post" action="">
+							<input type="hidden" name="temasale" value="Бесплатная консультация">
+							<div class="form-inp">
+								<input type="email" name="email" class="form-inp" required placeholder="Ваш email">
+							</div>
+							<div class="form-inp">
+								<input type="tel"  name="phone" pattern="^[0-9-+\s()]*$"  class="form-inp" required placeholder="Ваш телефон">
+							</div>
+							<div class="form-inp">
+								<input type="text" name="name" class="form-inp" required placeholder="Ваше имя">
+							</div>
+							<div class="form-inp">
+								<textarea type="text" name="message" class="form-inp" required placeholder="Дополнительная информация"></textarea>
+							</div>
+							<a href="#" class="allow-link open-popup" iddiv="popup-form-agree">*Отправляя форму, вы даете свое согласие на обработку персональных данных</a>
+							<div class="form-button">
+								<button  class="popup-btn" type="submit" id="free-consult">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="popup-calculator-form" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<div class="popup-answer">
+					<h6 class="popup-text">Благодарим за обращение в международную компанию Crazy China! В течение 3 минут с Вами свяжется наш специалист</h6>
+					<div class="popup-icon">
+						<i class='fas fa-check-circle' style='font-size:60px;color:rgb(203, 203, 175)'></i>
+					</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--HEADER AREA END-->
+		<!--SERVICES SECTION START-->
+        <section id="services" class="services">
+            <div class="services-container container padding">
+                <h2>Полный комплекс услуг по работе с Китаем</h2>
+				<div class="oliv-hr">
+					<img src="images/oliv-hr.png" alt="">
+				</div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.1s">
+							<img src="images/service1.png" alt="">
+							<h3>Автодоставка и <br>Ж/Д доставка</h3>
+							<a href="#" class="open-popup" iddiv="popup-1">Подробнее</a>
+						</div>
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.2s">
+							<img src="images/service2.png" alt="">
+							<h3>Доставка по морю</h3>
+							<a href="#" class="open-popup" iddiv="popup-2">Подробнее</a>
+						</div>
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.3s">
+							<img src="images/service3.png" alt="">
+							<h3>Авиадоставка и перевозки</h3>
+							<a href="#" class="open-popup" iddiv="popup-3">Подробнее</a>
+						</div>
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.4s">
+							<img src="images/service4.png" alt="">
+							<h3>Экспресс доставка</h3>
+							<a href="#" class="open-popup" iddiv="popup-4">Подробнее</a>
+						</div>	
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.5s">
+							<img src="images/service5.png" alt="">
+							<h3>Доставка товара <br>«Под ключ»</h3>
+							<a href="#" class="open-popup" iddiv="popup-5">Подробнее</a>
+						</div>
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.6s">
+							<img src="images/service6.png" alt="">
+							<h3>Организация закупок</h3>
+							<a href="#" class="open-popup" iddiv="popup-6">Подробнее</a>
+						</div>
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.7s">
+							<img src="images/service7.png" alt="">
+							<h3>Организация расчетов с поставщиком</h3>
+							<a href="#" class="open-popup" iddiv="popup-7">Подробнее</a>
+						</div>
+                    </div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="services-block wow fadeInUp" data-wow-delay="0.8s">
+							<img src="images/service8.png" alt="">
+							<h3>Консалтинг</h3>
+							<a href="#" class="open-popup" iddiv="popup-8">Подробнее</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup-1" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Автодоставка и <br>Ж/Д доставка</h5>
+					<div class="popup-img">
+						<img src="images/service1.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Мультимодальные сухопутные перевозки сборных грузов из Китая — самый популярный способ доставки груза.</p>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> участников малого и среднего бизнеса;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> груза весом от 50 кг до нескольких десятков тонн;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> оперативной доставки груза.</li>
+						</ul>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-params">
+							<li><i class='fas fa-balance-scale' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 5px 0 1px'></i>Вес: от 50 кг</li> 
+							<li><i class='far fa-calendar-alt' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 10px 0 1px'></i>Время доставки: 25-30 дней </li>
+							<li><i class='fas fa-dollar-sign' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 15px 0 1px'></i>Стоимость: от 2,5 $/кг (включено таможенное оформление)</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>  
+				</div>
+			</div>
+       		<div id="popup-2" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Доставка по морю</h5>
+					<div class="popup-img">
+						<img src="images/service2.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Морские грузоперевозки — разумное решение для тех, кто планирует доставку отдельного или сборного контейнера из отдаленных стран и континентов.</p>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> больших объемов товаров;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> сезонных видов товаров;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> крупногабаритных и тяжеловесных грузов.</li>
+						</ul>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-params">
+							<li><i class='fas fa-balance-scale' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 5px 0 1px'></i>Вес: от 2 т</li> 
+							<li><i class='far fa-calendar-alt' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 10px 0 1px'></i>Время доставки: 45-55 дней</li>
+							<li><i class='fas fa-dollar-sign' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 15px 0 1px'></i>Стоимость: от 0,5 $/кг (включено таможенное оформление)</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+       		<div id="popup-3" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Авиадоставка</h5>
+					<div class="popup-img">
+						<img src="images/service3.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Доставка груза прямыми авиарейсами — быстрый и надежны способ грузоперевозки из Азии.</p>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> оперативной доставки;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> доставки небольших по объему или пробных партий товаров;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> доставки ассортимента продукции с ограниченным сроком хранения;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> доставки дорогостоящих хрупких грузов.</li>
+						</ul>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-params">
+							<li><i class='fas fa-balance-scale' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 5px 0 1px'></i>Вес: от 40 кг</li> 
+							<li><i class='far fa-calendar-alt' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 10px 0 1px'></i>Время доставки: 10-14 дней</li>
+							<li><i class='fas fa-dollar-sign' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 15px 0 1px'></i>Стоимость: от 5,7 $/кг (включено таможенное оформление)</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+      		<div id="popup-4" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Экспресс доставка</h5>
+					<div class="popup-img">
+						<img src="images/service4.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Данный вид доставки является срочным или экстренным способом доставки.</p>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> доставки образцов вашего товара;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> небольших по объему партии товаров;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> хрупких и дорогостоящих товаров;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> недостающих аксессуаров для партии товара.</li>
+						</ul>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-params">
+							<li><i class='fas fa-balance-scale' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 5px 0 1px'></i>Вес: от 1 кг</li> 
+							<li><i class='far fa-calendar-alt' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 10px 0 1px'></i>Время доставки: 2-5 дней </li>
+							<li><i class='fas fa-dollar-sign' style='font-size:16px;color:rgb(203, 203, 175);margin:2px 15px 0 1px'></i>Стоимость: от 40 $/кг (включено таможенное оформление)</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+      		<div id="popup-5" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Поставка товара «Под ключ»</h5>
+					<div class="popup-img">
+						<img src="images/service5.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Включает в себя:<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> поиск и проверку поставщика; <br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> переговоры с выбранным поставщиком, согласование стоимости и сроков изготовления товара;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> заказ и экспресс доставка образцов продукции;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> закупку товаров у поставщика;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> финансовый сервис;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> контроль процесса производства/проверка качества товара/контроль отгрузки;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> таможенное оформление и доставку «до двери» получателя.
+						</p>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> владельцев малого и крупного бизнеса;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> начинающих бизнес с Китаем;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> тех, кто ценит свое время и деньги.</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+      		<div id="popup-6" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Организация закупок</h5>
+					<div class="popup-img">
+						<img src="images/service6.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Включает в себя:<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> заключение договор с поставщиком на покупку или производство продукции;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> предоставление инвойса на оплату;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> согласование и размещение заказа с поставщиком;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> контроль производственного процесса на всех этапах (в том числе OEM или ODM производство);<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> проверка готового товара на складе поставщика;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> контроль отгрузки товара на наш склад.
+						</p>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> крупного бизнеса;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> поиска нового/альтернативного надежного поставщика/производителя;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> производства/закупки товара под своим брендом;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> организации удаленного офиса ВЭД.</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+      		<div id="popup-7" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Организация расчетов <br>с поставщиком</h5>
+					<div class="popup-img">
+						<img src="images/service7.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Данная услуга обсуждается индивидуально под конкретный запрос.</p>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+      		<div id="popup-8" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<h5 class="popup-title">Консалтинг</h5>
+					<div class="popup-img">
+						<img src="images/service8.png" alt="">
+					</div>
+					<div class="popup-content">
+						<p>Включает в себя:<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> поиск поставщика и товара;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> заказ и доставка образцов;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> инспекция фабрик и поставщиков;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> переговоры с поставщиком;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> удаленное посещение выставок;<br>
+						<i class='fas fa-check' style='font-size:10px;color:rgb(203, 203, 175);padding:2px'></i> MICE-услуги на территории Китая и РФ;</p>
+						<div class="oliv-hr">
+							<img src="images/oliv-hr.png" alt="">
+						</div>
+						<ul class="popup-for">Оптимально подходит для:
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> участников малого и крупного бизнеса;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> начинающих и опытных предпринимателей;</li>
+							<li><i class='fas fa-circle' style='font-size:5px;color:rgb(203, 203, 175);padding:2px'></i> поддержания ваших бизнес-процессов.</li>
+						</ul>
+					</div> 
+					<button class="popup-btn">Заказать услугу</button>   
+				</div>
+			</div>
+       		<div id="popup-form" class="popup-overlay">
+				<div class="popup servises-popup-form">
+					<div class="close-popup"></div>
+					<h6 class="popup-text">Заполните форму и наш специалист свяжется с Вами в течение 3 минут</h6>
+						<form id="services-form" class="form popup-form" name="form" method="post" action="">
+							<input type="hidden" name="services" value="">
+						<div class="form-inp">
+							<input type="email" name="email" class="form-inp" required placeholder="Ваш email">
+						</div>
+						<div class="form-inp">
+							<input type="tel" name="phone" pattern="^[0-9-+\s()]*$"  class="form-inp" required placeholder="Ваш телефон">
+						</div>
+						<div class="form-inp">
+							<input type="text" name="name" class="form-inp" required placeholder="Ваше имя">
+						</div>
+						<div class="form-inp">
+							<textarea type="text" name="message" class="form-inp" required placeholder="Дополнительная информация"></textarea>
+						</div>
+						<a href="#" class="allow-link open-popup" iddiv="popup-form-agree">*Отправляя форму, вы даете свое согласие на обработку персональных данных</a>
+						<div class="form-button">
+							<button  class="popup-btn" type="submit" id="order-service">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+        </section>
+		<!--SERVICES SECTION END-->
+		<!--CALCULATOR SECTION START-->
+        <section id="calculator" class="calculator">
+            <div class="calculator-container container  padding">
+                <h2>Расчет стоимости доставки и таможенного оформления</h2>
+                <div class="row d-flex justify-content-center">
+					<form id="calculator-form" class="forms calculator-form" name="form" method="post" action="" enctype="multipart/form-data">
+						<input type="hidden" name="calculator" value="calculator">
+						<input type="hidden" name="size" value="">
+						<input type="hidden" name="sposob" value="">
+						<input type="hidden" name="summa" value="">
+						<input type="hidden" name="tema" value="Калькулятор расчета доставки с сайта!">
+						<div class="form-inp calculator-description">
+							<input type="text" name="description" class="form-inp" required placeholder="Описание груза">
+						</div>
+						<div class="form-inp calculator-weight left">
+							<input type="text" name="weight" class="form-inp" required placeholder="Вес, кг">
+						</div>
+						<div class="form-inp calculator-volume right">
+							<input type="text" name="volume" class="form-inp" required placeholder="Габариты, объем м.куб">
+						</div>
+						<h4 class="clear">Способ доставки</h4>
+						<div class="container">
+						<div class="radiobuttons row">
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="radiobuttons-item">
+									<input type="radio" value="1" name="auto">
+									<img src="images/service1.png" alt="">
+									<span>ЖД и авто <br>(25 дней)</span>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="radiobuttons-item">
+									<input type="radio" value="2" name="sea">
+									<img src="images/service2.png" alt="">
+									<span>Море <br>(45 дней)</span>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="radiobuttons-item">
+									<input type="radio" value="3" name="avia">
+									<img src="images/service3.png" alt="">
+									<span>Авиа <br>(10 дней)</span>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-12">
+								<div class="radiobuttons-item">
+									<input type="radio" value="4" name="express">
+									<img src="images/service4.png" alt="">
+									<span>Экспресс <br>(2 дня)</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="form-inp calculator-price">
+							<input type="text" name="price" class="form-inp" required placeholder="Стоимость, USD">
+						</div>
+						<div class="form-inp calculator-name">
+							<input type="text" name="name_c" class="form-inp" required placeholder="Ваше имя">
+						</div>
+						<div class="form-inp calculator-email left">
+							<input type="email" name="email_c" class="form-inp" required placeholder="Ваш email">
+						</div>
+						<div class="form-inp calculator-phone right">
+							<input type="tel" name="phone_c" pattern="^[0-9-+\s()]*$"  class="form-inp" required placeholder="Ваш телефон">
+						</div>
+						<p class="left">Вы можете приложить документы для более точного рассчета. Инвойс, упаковочный лист и т.д.</p>
+						<div class="form-img right">
+							<input type="file" name="files" id="file">
+							<label for="file"><img src="images/cloude.png" alt=""><i class='fas fa-check' id="success-file"></i></label>
+						</div>
+						<div class="form-button clear">
+							<button type="submit" id="calculate" class="footer-form-btn">Моментальный расчет</button>
+						</div>
+					</form>
+               	<a href="#" class="allow-link open-popup" iddiv="popup-form-agree">*Отправляя форму, вы даете свое согласие на обработку персональных данных</a>
+                </div>
+            </div>
+            <div id="popup-calculator-form-calc" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<div class="popup-answer">
+						<h6 class="popup-text">Ваш запрос принят в работу. В течение минуты расчет будет оправлен на указанную Вами почту </h6>
+						<div class="popup-icon">
+							<i class='fas fa-check-circle' style='font-size:60px;color:rgb(203, 203, 175)'></i>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+		<!--CALCULATOR SECTION END-->
+		<!--ABOUT SECTION START-->
+        <section id="about" class="about container-fluid">
+            <div class="about-container  padding  justify-content-center">
+                <h3>Crazy China — это команда экспертов с многолетним <br>опытом работы с Китаем.</h3>
+				<div class="oliv-hr">
+					<img src="images/oliv-hr.png" alt="">
+				</div>
+				<p class="about-us">Мы объединили наши знания и опыт в сфере логистики, таможенного оформления, маркетинга и консалтинга для того, чтобы предоставить Вам высокий уровень партнерства.</p>
+				<div class="about-block wow fadeInRight" data-wow-delay="0.1s">
+					 <div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block left">
+								<div class="about-img-block_popup about-img-block_popup1">
+									Наши китайские сотрудники контролируют производство/закупку и отправление груза непосредственно в Китае
+								</div>
+								<div class="about-img">
+									<img src="images/about1.png" alt="">
+								</div>
+								<span class="about-numb right">1</span>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr right">
+								<p>Мы работаем на территории РФ и Китая</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-block wow fadeInLeft" data-wow-delay="0.2s">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr left">
+								<p>Мы знаем все «подводные камни» в бизнесе с Китаем</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block right">
+							<div class="about-img-block_popup about-img-block_popup-right">
+								У Вас не возникнут трудности и непредвиденные ситуации с Вашим товаром 
+							</div>
+								<div class="about-img right">
+									<img src="images/about2.png" alt="">
+								</div>
+								<span class="about-numb left">2</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-block wow fadeInRight" data-wow-delay="0.3s">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block left">
+								<div class="about-img-block_popup about-img-block_popup-left">
+									Вы получите компетентную консультацию на каждом этапе/ по любому вопросу
+								</div>
+								<div class="about-img">
+									<img src="images/about3.png" alt="">
+								</div>
+								<span class="about-numb right">3</span>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr right">
+								<p>Каждый сотрудник имеет более чем 5-летний опыт работы с Китаем</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-block wow fadeInLeft" data-wow-delay="0.4s">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr left">
+								<p>В нашем штате есть китайско-говорящие менеджеры</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block right">
+								<div class="about-img-block_popup about-img-block_popup-right">
+									Вы не столкнетесь с трудностями понимания и искажением важной информации
+								</div>
+								<div class="about-img right">
+									<img src="images/about4.png" alt="">
+								</div>
+								<span class="about-numb left">4</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-block wow fadeInRight" data-wow-delay="0.5s">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block left">
+								<div class="about-img-block_popup about-img-block_popup-left">
+									Вы получите уникальное предложение с учетом специфики Вашего запроса
+								</div>
+								<div class="about-img">
+									<img src="images/about5.png" alt="">
+								</div>
+								<span class="about-numb right">5</span>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr right">
+								<p>К каждому клиенту индивидуальный подход</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-block wow fadeInLeft" data-wow-delay="0.6s">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr left">
+								<p>Мы заключаем официальный договор РФ</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block right">
+								<div class="about-img-block_popup about-img-block_popup-right">
+									Вы получите полный комплект закрывающей документации
+								</div>
+								<div class="about-img right">
+									<img src="images/about6.png" alt="">
+								</div>
+								<span class="about-numb left">6</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-block wow fadeInRight" data-wow-delay="0.7s">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-5">
+							<div class="about-img-block left">
+								<div class="about-img-block_popup about-img-block_popup-left">
+									Ваша заявка будет гарантировано обработана в течение 3 минут
+								</div>
+								<div class="about-img">
+									<img src="images/about7.png" alt="">
+								</div>
+								<span class="about-numb right">7</span>
+							</div>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-8 col-7">
+							<div class="about-descr right">
+								<p>Мы доступны для Вас 7 дней в неделю</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+		<!--ABOUT SECTION END-->
+		<!--WORK STAGE SECTION START-->
+        <section id="work-stage" class="work-stage">
+            <div class="work-stage-container container-fluid padding">
+                <h2>Этапы работы</h2>
+				<div class="oliv-hr">
+					<img src="images/oliv-hr.png" alt="">
+				</div>
+                <div class="work-stage1">
+                    <div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+                        <h5 class="wow fadeInDown" data-wow-delay="0.1s">Заявка на сайте или звонок</h5>
+                         <div class="work-stage-item wow zoomIn" data-wow-delay="0.2s">
+                            <img src="images/stage1.png" alt="">
+						</div>
+                    </div>
+					<div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+                        <h5 class="wow fadeInDown" data-wow-delay="0.7s">Заключение договора</h5>
+                         <div class="work-stage-item wow zoomIn" data-wow-delay="0.8s">
+                            <img src="images/stage3.png" alt="">
+						</div>
+                    </div>
+					<div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+                        <h5 class="wow fadeInDown" data-wow-delay="1.3s">Таможенное оформление</h5>
+                         <div class="work-stage-item wow zoomIn" data-wow-delay="1.4s">
+                            <img src="images/stage5.png" alt="">
+						</div>
+                    </div>
+					<div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+                        <h5 class="wow fadeInDown" data-wow-delay="1.9s">Доставка груза получателю</h5>
+                         <div class="work-stage-item wow zoomIn" data-wow-delay="2s">
+                            <img src="images/stage7.png" alt="">
+						 </div>
+                    </div>
+                </div>
+                <div class="work-stage-dots">
+                	<div class="col-lg-3 col-md-3 col-sm-12">
+					 	<div class="work-stage-dots-left wow fadeIn" data-wow-delay="0.3s">
+                            <img src="images/left-dots.png" alt="">
+						</div>
+                   		<div class="work-stage-dots-right wow fadeIn" data-wow-delay="0.5s">
+                            <img src="images/right-dots.png" alt="">
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+					 	<div class="work-stage-dots-left wow fadeIn" data-wow-delay="0.9s">
+                            <img src="images/left-dots.png" alt="">
+						</div>
+                   		<div class="work-stage-dots-right wow fadeIn" data-wow-delay="1.2s">
+                            <img src="images/right-dots.png" alt="">
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+					 	<div class="work-stage-dots-left wow fadeIn" data-wow-delay="1.5s">
+                            <img src="images/left-dots.png" alt="">
+						</div>
+                   		<div class="work-stage-dots-right wow fadeIn" data-wow-delay="1.8s">
+                            <img src="images/right-dots.png" alt="">
+						</div>
+                    </div>
+                </div>
+                <div class="work-stage2">
+                	<div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+					 	<div class="work-stage-item wow zoomIn" data-wow-delay="0.4s">
+                            <img src="images/stage2.png" alt="">
+						</div>
+						<h5 class="wow fadeInUp" data-wow-delay="0.5s">Расчет доставки</h5>
+                    </div>
+                    <div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+                         <div class="work-stage-item wow zoomIn" data-wow-delay="1s">
+                            <img src="images/stage4.png" alt="">
+						</div>
+						<h5 class="wow fadeInUp" data-wow-delay="1.1s">Доставка груза</h5>
+                    </div>
+                    <div class="work-stage-content col-lg-3 col-md-3 col-sm-12">
+                         <div class="work-stage-item wow zoomIn" data-wow-delay="1.6s">
+                            <img src="images/stage6.png" alt="">
+						</div>
+						<h5 class="wow fadeInUp" data-wow-delay="1.7s">Оплата доставки клиентом</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--WORK STAGE SECTION END-->
+        <!--CONTACTS SECTION START-->
+        <section id="contacts" class="contacts">
+           <div class="contacts-container">
+               <div class="contacts-content">
+					<h2>Остались вопросы? <br>Заполните форму и мы оперативно свяжемся с Вами!</h2>
+					<form id="contacts-form" class="form footer-form" name="form" method="post" action="">
+						<input type="hidden" name="temafooter" value="Обратная связь с контактов сайта">
+						<div class="input-box">
+							<div class="form-inp footer-form-email">
+								<input type="email" name="email" class="form-inp" required placeholder="Ваш email">
+							</div>
+							<div class="form-inp footer-form-phone">
+								<input type="tel" id="phone" name="phone" pattern="^[0-9-+\s()]*$"  class="form-inp" required placeholder="Ваш телефон">
+							</div>
+						</div>
+						<div class="form-inp footer-form-name">
+							<input type="text" name="name" class="form-inp" required placeholder="Ваше имя">
+						</div>
+						<div class="form-inp footer-form-message">
+							<textarea name="message" class="form-inp" required placeholder="Дополнительная информация"></textarea>
+						</div>
+						<div class="form-button">
+							<input type="submit" id="pismo" class="footer-form-btn" value="Отправить">
+						</div>
+					</form>
+				   <a href="#" class="open-popup" iddiv="popup-form-agree">*Отправляя форму, вы даете свое согласие на обработку персональных данных</a>
+				</div>
+          		<div id="popup-form-agree" class="popup-overlay">
+					<div class="popup popup-agree">
+						<div class="close-popup"></div>
+						<h5 class="popup-title">Пользовательское соглашение</h5>
+						<p class="popup-content">Настоящее пользовательское соглашение является публичной офертой (то есть предложением заключить соглашение). Нажимая кнопки «Отправить сообщение», «Отправить заказ», «Отправить заявку», «Заказать обратный звонок» и другие кнопки для отправки данных форм, Пользователь считается присоединившимся к нему.</p>
+					</div>
+				</div>
+          		<div id="popup-footer-form" class="popup-overlay">
+				<div class="popup">
+					<div class="close-popup"></div>
+					<div class="popup-answer">
+					<h6 class="popup-text">Благодарим за обращение в международную компанию "Crazy China"! В течение 3 минут с Вами свяжется наш специалист</h6>
+					<div class="popup-icon">
+						<i class='fas fa-check-circle' style='font-size:60px;color:rgb(203, 203, 175)'></i>
+					</div>
+					</div>
+				</div>
+			</div>
+           		<footer>
+           			<div class="container-fluid">
+						<div class="row d-flex justify-content-between">
+							<a href="#" class="logo">
+								<img src="images/logo.png" alt="">
+							</a>
+							<div class="footer-links">
+								<ul id="footer-nav-list" class="footer-nav-list">
+									<li><a class="nav-list-item" href="#services">Комплекс услуг</a></li>
+									<li><a class="nav-list-item" href="#about">О компании</a></li>
+									<li><a class="nav-list-item" href="#calculator">Калькулятор</a></li>
+								</ul>
+								<div class="social-icons">
+									<a href="https://vk.com/club191605683" target="_blank"><img src="images/vk.png" alt=""></a>
+									<a href="https://www.instagram.com/crazychina.ru/" target="_blank"><img src="images/insta.png" alt=""></a>
+									<a href="https://www.facebook.com/crazychina.ru/" target="_blank"><img src="images/fb.png" alt=""></a>
+									<a href="https://wa.me/79531693009" target="_blank"><img src="images/whatsapp.png" alt=""></a>
+									<a href="https://t-do.ru/CrazyChina_ru" target="_blank"><img src="images/telegram.png" alt=""></a>
+								</div>
+							</div>
+							<div class="footer-contacts">
+								<span>СПб, ул.Гражданская д.13-15</span>
+								<a href="tel:+79531693009" class="phone">+7 (953) 169 30 09</a>
+								<a href="mailto:info@crazychina.ru" class="mail">info@crazychina.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<span class="all-rights">&copy; Crazy China.  Все права защищены. </span>
+						<a class="mycreativewebsite" href="http://mycreative.website" target="_blank">MyCreativeWebsite</a>
+					</div>
+				</footer>
+            </div>
+        </section>
+        <!--CONTACTS SECTION END <a href="http://mycreative.website" target="_blank">MyCreativeWebsite</a>-->
+	</div>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mask.js"></script>
+       <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
