@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Steps on map</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-container">
+                <div class="menu-container">
+                    <nav  class="nav-block" >
+                        <div class="menu">
+                            <div class="menu-btn" id="menu-btn" onclick="myMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul id="nav-list" class="nav-list">
+                                <li class="active"><a class="nav-list-item" href="#">Главная</a></li>
+                                <li><a class="nav-list-item" href="#tours">Туры</a></li>
+                                <li><a class="nav-list-item" href="#excellence">Преимущества</a></li>
+                                <li><a class="nav-list-item" href="#about">О нас</a></li>
+                                <li><a class="nav-list-item" href="#testimonials">Отзывы</a></li>
+                                <li><a class="nav-list-item" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <img src="images/logo11.png" alt="">
+                </div>
+                <div class="pos mountain"></div>
+                <div id="snowborder" class="pos snowborder"></div>
+            </div>
+		</header>
+        <section id="tours" class="tours bg-gray">
+            <div class="tours-container container">
+                <h1>Туры</h1>
+                <h2>Список туров на 2020 год</h2>
+                <div class="row">
+                    <div class="tour-block col-lg-3 col-md-6 col-sm-12">
+                        <h3>Горнолыжный тур</h3>
+                        <div class="tour-item">
+                            <img src="images/gornolijniy.jpg" alt=""/>
+                            <h5>Армения – Цахкадзор</h5>
+                            <ul>
+                                <li>12 - 25 января</li>
+                                <li>09 – 22 февраля</li>
+                                <li></li>
+                            </ul>
+                            <a href="tours.html" class="tour-btn" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="tour-block col-lg-3 col-md-6 col-sm-12">
+                        <h3>Фото тур</h3>
+                        <div class="tour-item">
+                            <img src="images/photo.jpg" alt=""/>
+                            <h5>Нидерланды \ Бельгия – Амстердам \ Брюгге</h5>
+                            <ul>
+                                <li>05 - 18 апреля</li>
+                                <li>26 апреля - 09 мая</li>
+                                <li>17 – 30 мая</li>
+                            </ul>
+                            <a href="photo.html" class="tour-btn" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="tour-block col-lg-3 col-md-6 col-sm-12">
+                        <h3>Серф тур</h3>
+                        <div class="tour-item">
+                            <img src="images/surf.jpg" alt=""/>
+                            <h5>Индонезия – Бали</h5>
+                            <ul>
+                                <li>07 - 20 июня</li>
+                                <li>12 - 25 июля</li>
+                                <li>09 - 22 августа</li>
+                            </ul>
+                            <a href="surf.html" class="tour-btn" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="tour-block col-lg-3 col-md-6 col-sm-12">
+                        <h3>Йога тур</h3>
+                        <div class="tour-item">
+                            <img src="images/yoga.jpg" alt=""/>
+                            <h5>Шри-Ланка</h5>
+                            <ul>
+                                <li>08 - 21 ноября</li>
+                                <li>29 - 12 декабря</li>
+                                <li></li>
+                            </ul>
+                            <a href="yoga.html" class="tour-btn" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="excellence" class="excellence">
+            <div class="excellence-container container">
+                <h2>Почему именно мы</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="excellence-item">
+                            <div class="excellence-icon">
+                                <img src="images/worldwide.png">
+                            </div>
+                            <h4>Туры и фестивали</h4>
+                            <p>У нас ты найдешь уникальные и интересные туры в разные точки планеты. А также в течение года будут короткие выезды на самые крутые и яркие фестивали.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="excellence-item">
+                            <div class="excellence-icon">
+                                <img src="images/hotel.png">
+                            </div>
+                            <h4>Проживание и питание</h4>
+                            <p>Мы обеспечим тебя комфортабельным жильем и вкуснейшими завтраками. В зависимости от тура и страны, это либо отель либо вилла.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="excellence-item">
+                            <div class="excellence-icon">
+                                <img src="images/car.png">
+                            </div>
+                            <h4>Транспорт</h4>
+                            <p>На время своего пребывания в кемпе мы обеспечим тебя комфортабельным транспортом. Мы знаем когда лучше передвигаться на минивэне, а когда лучше взять велосипед.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="excellence-item">
+                            <div class="excellence-icon">
+                                <img src="images/training.png">
+                            </div>
+                            <h4>Уроки и тренинги</h4>
+                            <p>Мы работаем с лучшими специалистами и профессионалами своего дела. Ты проведешь свой отпуск не только интересно, но и получишь ценные знания и опыт.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="excellence-item">
+                            <div class="excellence-icon">
+                                <img src="images/margarita.png">
+                            </div>
+                            <h4>Пати и тусовки</h4>
+                            <p>Вместе будем тусить в лучших клубах и дегустировать местную кухню. В кемпе найдется время на все - кино со снеками, настольные игры и состязания, пляжный волейбол, и даже квест.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="excellence-item">
+                            <div class="excellence-icon">
+                                <img src="images/gift.png">
+                            </div>
+                            <h4>Розыгрыши и призы</h4>
+                            <p>Steps on Map всегда имеет в запасе разные сюрпризы,  розыгрыши и призы. Побывав у нас однажды ты точно вернешься сново!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="tour-container container">
+                <h2>Наша история</h2>
+                <div class="row">
+                    <div class="about-bg-block col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-bg">
+                            <div class="about-bg">
+                                <img src="images/aboutt.jpg">
+                            </div>
+                            <div class="about-bg3">
+                                <img src="images/borders.jpg">
+                            </div>
+                            <div class="about-bg1">
+                                <img src="images/about19.jpg">
+                            </div>
+                            <div class="about-bg2">
+                                <img src="images/about20.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text col-lg-6 col-md-6 col-sm-12">
+                        <p>
+                        Если ты любишь путешествовать, то тебе со мной по пути.
+                        Я хочу объединить людей, которым интересны путешествия со смыслом.
+                        Здесь ты найдешь уникальные, тематические туры в разные точки планеты:<br>
+                            <i class="fa fa-check" style="font-size:20px;color:#902f8c;"></i> фото, <br>
+                            <i class="fa fa-check" style="font-size:20px;color:#902f8c;"></i> фэшн, <br>
+                            <i class="fa fa-check" style="font-size:20px;color:#902f8c;"></i> гастрономические, <br>
+                            <i class="fa fa-check" style="font-size:20px;color:#902f8c;"></i> спорт,<br>
+                            <i class="fa fa-check" style="font-size:20px;color:#902f8c;"></i> фестивали, <br>
+                            <i class="fa fa-check" style="font-size:20px;color:#902f8c;"></i> карнавалы и другие яркие события. <br>
+                        Я разделила год на 4 части и в каждом квартале буду предлагать тебе один тур.
+                        Например, зимой горнолыжный тур, весной фото тур, летом серф тур, осенью йога тур.
+                        В течение года будут короткие, пятидневные, поездки на фестивали и другие интересные события. Например "Томатина" в Испании или "Октоберфест" в Германии.</p>
+                        <p>Каждый из туров будет включать в себя, мастер-классы, разные экскурсии, включая нетуристические места, интересные игры, совместный кинопросмотр, пикники и еще много чего интересного.</p>
+                        <p>Присоединяйся, и стань участником интересного и необычного путешествия, получи кучу положительных эмоций, новые знания и навыки, новых друзей. Всю организацию тура возьму на себя, тебе остается лишь купить билет и прилететь.</p>
+                    </div>
+                    <div class="container" id="about-next">
+                        <p>Но давай начнем сначала!</p>
+                        <p>Меня зовут Марине, и я безумно влюблена в жизнь и путешествия! Мечтаю объединить всех любителей путешествий в большую, дружную компанию.</p>
+                        <p>Мой девиз: Путешествую сама, и вдохновляю на путешествия других!</p>
+                        <p>Родилась я в Армении, в городе Ереване.
+                        С детства очень люблю путешествовать. Помню, как с нетерпением ждала лета, чтобы поехать отдыхать с палатками на озеро Севан.
+                        И хочется сказать - это одно из красивейших озёр Кавказа, настоящее чудо природы с чистейшей водой.
+                        Целую неделю наша семья вместе с семьёй моей тёти жили в палатках у самого озера, плавали, ловили рыбу, играли в разные игры.
+                        Иногда ночью мы разводили костёр, рассказывали разные истории или анекдоты, а иногда смотрели на звёзды и созвездия.</p>
+                        <p>По мере того как я взрослела, у меня появилось много разных увлечений — фото, йога, танцы, массаж, сёрфинг, сноубординг (в каждой сфере опыт 5+ и имеются сертификаты, дипломы)… а когда пришла пора выбирать что-то одно, я никак не могла это сделать.</p>
+                        <p>С 2010-ого я начала путешествовать, и в какой-то момент я поняла, что в моих путешествиях чего-то не хватает.
+                        В 2016-ом я нашла сёрф лагерь на Бали и пыталась уговорить друзей поехать со мной, но по разным причинам никто не поехал. И я осталась одна…</p>
+                        <p>Что делать? Ехать одной в такую даль, да и сёрф занятие не безопасное, но наконец-то, я решилась, и это было просто волшебно. Эти короткие две недели я была по-настоящему счастлива.</p>
+                        <p>Через некоторое время меня осенило, что я могу объединить всё, что я люблю воедино, организовывая различные интересные туры, объединяя людей с похожими интересами в путешествиях. Вот так и появился этот проект.
+                        Так что добро пожаловать в мир увлекательных путешествий!</p>
+                    </div>
+                    <input type="button" value="Читать далее" onclick="Hide()" class="banner-btn" id="about-btn">
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonial">
+            <div class="testimonial-container container">
+                <h2>Что пишут о нас наши участники</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                         <div class="testimonial-item">
+                            <img src="images/otziv2.png">
+                            <h5>Марк Захаров</h5>
+                            <em>"Все было спланировано до мелочей, не приходилось париться ни о каких мелочах, все мероприятия были безумно интересны и запоминающиеся. В общем данная поездка в корне поменяла мой взгляд о путешествиях и явно в лучшую сторону."</em>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="testimonial-item">
+                            <img src="images/otziv.jpg">
+                            <h5>Нина Иванова</h5>
+                            <em>"Мне все очень понравилось — организация на отличном уровне, при этом не чувствовала себя в каких-то рамках, расписании. Все очень легко и непринужденно, при этом все по обязательствам.."</em>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="testimonial-item">
+                            <img src="images/otziv3.png">
+                            <h5>Василий Темченко</h5>
+                            <em>"Сказать что все понравилось,это почти ничего не сказать! Кто хочет или сомневается в поездке — ребята даже не раздумывайте, только вперёд! У нас была очень веселая компания, да по другому и быть не может."</em>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </section>
+        <section  class="banner">
+            <div class="banner-container"  id="banner">
+                <div class="pos surfer" id="surfer"></div>
+                <div class="pos sea"></div>
+                <div class="banner-content">
+                    <h2>Давай вместе напишем историю <br>твоих незабываемых путешествий!</h2>
+                    <button class="banner-btn myBtn">Заказать тур</button>
+                </div>
+            </div>
+            <div class="overlay">
+				<div class="popup">
+					<h5>Заказать тур</h5>
+					<form id="form-tour1" class="form" name="form" method="post" action="send.php">
+						<div class="banner-inp">
+							<input type="text" name="name" class="banner-form-inp" required placeholder="Имя">
+						</div>
+						<div class="banner-inp">
+							<input type="email" name="email" class="banner-form-inp" required placeholder="Почта">
+						</div>
+                        <div class="banner-inp">
+							<input type="tel" id="phone" name="phone" pattern="^[0-9-+\s()]*$" class="banner-form-inp" required placeholder="Телефон">
+						</div>
+                        <div class="banner-inp">
+							<select name="tour" class="banner-form-inp">
+                                <option value="0">Выбрать тур</option>
+                                <option value="1">Горнолыжный тур</option>
+                                <option value="2">Фото тур</option>
+                                <option value="3">Серф тур</option>
+                                <option value="4">Йога тур</option>
+                            </select>
+						</div>
+						<div class="banner-inp">
+							<textarea type="text" name="comments" class="banner-form-inp" required placeholder="Комментарии"></textarea>
+						</div>
+						<div class="banner-inp">
+							<button type="submit" id="zakaz" class="banner-btn">Отправить</button>
+						</div>
+					</form>
+					<div class="close-popup"></div>
+				</div>
+			</div>
+        </section>
+        <section id="contacts" class="contact">
+           <div class="contact-container container">
+                <h2>Контакты</h2>
+                 <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <form id="form" class="form" name="form" method="post" action="">
+                            <div class="form-inp">
+                                <input type="text" name="name" class="form-inp" required placeholder="Имя">
+                            </div>
+                            <div class="form-inp">
+                                <input type="email" name="email" class="form-inp" required placeholder="Почта">
+                            </div>
+                            <div class="form-inp">
+                                <textarea type="text" name="message" class="form-inp" required placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" id="pismo" class="form-btn">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                         <div class="phone">
+                            <b>Свяжись с нами:</b><br>
+                            <a class="phone-icon viber">
+                                <i class="fa fa-phone" style="font-size:24px;color:white;"></i>
+                             </a>
+                            <a class="phone-icon watsapp">
+                                <i class="fa fa-whatsapp" style="font-size:24px;color:white;"></i>
+                             </a>
+                             <a class="phone-icon telegram">
+                                <i class="fa fa-send" style="font-size:20px;color:white;"></i>
+                             </a>
+                             <p>+37495 00 12 24</p>
+                             <p><a href="mailto:info@stepsonmap.club?subject=Письмо с сайта stepsonmap.club">info@stepsonmap.club</a></p>
+                        </div>
+                        <div class="social">
+                            <b>Подпишись на нас и будь в курсе всех событий</b><br>
+                            <a class="soc-icon" href="https://vk.com/stepsonmap" target="_blank">
+                                <i class="fa fa-vk" style="font-size:24px;color:#348da7;"></i>
+                            </a>
+                            <a class="soc-icon" href="https://www.facebook.com/stepsonmap/" target="_blank">
+                                <i class="fa fa-facebook" style="font-size:24px;color:#348da7;"></i>
+                            </a>
+                            <a class="soc-icon" href="https://www.instagram.com/steps.on.map/" target="_blank">
+                                <i class="fa fa-instagram" style="font-size:24px;color:#348da7;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span><b>© Steps on Map</b>, 2019-2020.  Все права защищены. </span>
+            <a href="http://mycreative.website" target="_blank">MyCreativeWebsite</a>
+        </footer>
+	</div>
+    <script>
+        var banner1 = document.getElementById('snowborder')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+        var offset=window.pageYOffset;
+        scroll=offset;
+        banner1.style.width=(100 + scroll/5)+'%';
+        banner1.style.left = scroll/50 + '%';
+    });
+</script>
+    <script src="js/main.js"></script>
+   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
