@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>YOUR ART MUSEUM</title>
+	<link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+        <header>
+            <div class="header-overlay"> 
+            </div>
+            <div class="header-container">
+                <div class="status-bar">
+                    <div class="status-bar-item left">
+                        <img src="images/figma-img1.png" alt=""> 
+                        <span>Figma</span>
+                        <img src="images/figma-img2.png" alt="">
+                    </div>
+                    <div class="status-bar-item">
+                        <span>9:42 AM</span>
+                    </div>
+                    <div class="status-bar-item right">
+                        <img src="images/charge-img1.png" alt="">
+                        <span>42%</span>
+                        <img src="images/charge-img2.png" alt="">
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h1>YOUR<br> ART<br> MUSEUM</h1>
+                    <p>151 3rd St <br>San Francisco, CA 94103</p>
+                    <form id="form-id" method="post" name="myform" class="form">
+                        <input type="text" name="email" id="email" placeholder="Email address" class="form-inp"/>
+                        <input type="password" name="password" id="password" placeholder="Password" class="form-inp"/>
+                        <a href="#">Forgot your password?</a>
+                        <input type="button" value="Login" id="submit" onclick="validate()" class="form-inp btn"/>
+                        <a href="#" id="submit-a">Don’t have an account?</a>
+                    </form>
+                </div>
+            </div>
+        </header>  
+    </div>
+    <script>
+        function validate(){
+            var email = "123@mail.ru";
+            var password = "123";
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if ( username == "123@mail.ru" && password == "123"){
+            alert ("Login successfully");
+            window.location = "home.html"; 
+           
+            }else{
+            alert("Please try e-mail 123@mail.ru and password 123");
+               
+            }
+        }
+    </script>
+</body>
+</html>
